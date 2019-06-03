@@ -5,4 +5,12 @@
     <url>%2F2019%2F12%2F01%2Fhello-world%2F</url>
     <content type="text"><![CDATA[HELLO WORD!!!]]></content>
   </entry>
+  <entry>
+    <title><![CDATA[Easy keygen]]></title>
+    <url>%2F2019%2F06%2F03%2Fsource-post%2F</url>
+    <content type="text"><![CDATA[![在这里插入图片描述](https://img-blog.csdnimg.cn/20190603205052272.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDE1Mg==,size_16,color_FFFFFF,t_70) 开始便提示你输入name，接着又是serial；题目附带的文件显示，你需要找到指定serial下的name参数 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190603205301489.png) ![在这里插入图片描述](https://img-blog.csdnimg.cn/2019060320510826.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDE1Mg==,size_16,color_FFFFFF,t_70) 直接IDA打开，定位到主函数， ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190603205618108.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDE1Mg==,size_16,color_FFFFFF,t_70) 看来确实“easy”，直接放解码脚本 1234567891011121314value=[16,32,48]name=[]serial=&apos;5B134977135E7D13&apos;step=2sss=[serial[i:i+step] for i in range(0,len(serial),step)]len=len(serial)t=0for i in sss: if t&gt;=3: t=0 name.append(chr(int(i,16)^value[t])) t=t+1print(&quot;&quot;.join(name)) 可以解得name，成功解得！]]></content>
+      <tags>
+        <tag>-逆向 -Reversing</tag>
+      </tags>
+  </entry>
 </search>
