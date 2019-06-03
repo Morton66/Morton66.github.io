@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F12%2F01%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[HELLO WORD!!!]]></content>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2019/12/01/hello-world/"/>
+      <url>/2019/12/01/hello-world/</url>
+      
+        <content type="html"><![CDATA[<contents>HELLO WORD!!!</contents>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
