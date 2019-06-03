@@ -104,13 +104,10 @@
 <meta property="og:site_name" content="XM">
 <meta property="og:description" content="Reversing第二题wp">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190603205932584.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190603205959433.png">
-<meta property="og:updated_time" content="2019-06-03T13:46:05.479Z">
+<meta property="og:updated_time" content="2019-06-03T13:53:09.411Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Easy keygen">
 <meta name="twitter:description" content="Reversing第二题wp">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190603205932584.png">
 
 
 
@@ -416,7 +413,7 @@
                 
               
 
-              <time title="创建时间：2019-06-03 21:34:32 / 修改时间：21:46:05" itemprop="dateCreated datePublished" datetime="2019-06-03T21:34:32+08:00">2019-06-03</time>
+              <time title="创建时间：2019-06-03 21:34:32 / 修改时间：21:53:09" itemprop="dateCreated datePublished" datetime="2019-06-03T21:34:32+08:00">2019-06-03</time>
             
 
             
@@ -458,16 +455,7 @@
 
       
         <contents>
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190603205052272.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDE1Mg==,size_16,color_FFFFFF,t_70)
-开始便提示你输入name，接着又是serial；题目附带的文件显示，你需要找到指定serial下的name参数
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190603205301489.png)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019060320510826.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDE1Mg==,size_16,color_FFFFFF,t_70)
-直接IDA打开，定位到主函数，
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190603205618108.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM2MDE1Mg==,size_16,color_FFFFFF,t_70)
-看来确实“easy”，直接放解码脚本
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">value=[16,32,48]</span><br><span class="line">name=[]</span><br><span class="line">serial=&apos;5B134977135E7D13&apos;</span><br><span class="line">step=2</span><br><span class="line">sss=[serial[i:i+step] for i in range(0,len(serial),step)]</span><br><span class="line"></span><br><span class="line">len=len(serial)</span><br><span class="line">t=0</span><br><span class="line">for i in sss:</span><br><span class="line">	if t&gt;=3:</span><br><span class="line">		t=0</span><br><span class="line">	name.append(chr(int(i,16)^value[t]))</span><br><span class="line">	t=t+1</span><br><span class="line">print(&quot;&quot;.join(name))</span><br></pre></td></tr></table></figure>
-
-<p>可以解得name，<img src="https://img-blog.csdnimg.cn/20190603205932584.png" alt="在这里插入图片描述"><br>成功解得！<br><img src="https://img-blog.csdnimg.cn/20190603205959433.png" alt="在这里插入图片描述"></p>
+[CSDN链接](https://blog.csdn.net/weixin_43360152/article/details/90758956 "CSDN链接")
 </contents>
       
     </div>
