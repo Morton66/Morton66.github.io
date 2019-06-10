@@ -1,101 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2019/12/01/hello-world/"/>
-      <url>/2019/12/01/hello-world/</url>
-      
-        <content type="html"><![CDATA[<contents>HELLO WORD!!!</contents>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Reversing.kr-Music Player</title>
-      <link href="/2019/06/10/Reversing-kr-Music-Player/"/>
-      <url>/2019/06/10/Reversing-kr-Music-Player/</url>
-      
-        <content type="html"><![CDATA[<contents>题目提示，要让播放器播放到一分钟之后![](https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610204827.png)<p>看图标就可以判断，这是一个VB程序.<br>直接OD载入，先运行看看，</p><p><img src="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610173015.png" alt><br>右键，中文搜索引擎，智能搜索,找到‘1’，它应该就是那串“1？？？？？”，点进去，<br><img src="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610175212.png" alt><br>在它下面发现弹窗代码<img src="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610175326.png" alt><br>再往上找，发现跳转“jl”，直接改一下，改成“jmp”，设一下断点，再运行，他会立即停在这个断点（谁知道为什么，。。。），所以先不设断点，让程序运行，到59秒时，让它暂停，设断点，让程序运行，单击play按钮，程序会停在断点。<br>单步运行，找到下一个弹窗点，直接改一下，变成jmp，就此暴力破完了。<br><img src="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610205327.png" alt><br>当运行到一分钟之后，原本“MP3 Player”的地方就变成了，“Password is LIstenCare”<br><img src="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/QQ%E6%88%AA%E5%9B%BE20190610204458.png" alt></p></contents>]]></content>
-      
-      
+<search>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F12%2F01%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[HELLO WORD!!!]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Reversing.kr-Music Player]]></title>
+    <url>%2F2019%2F06%2F10%2FReversing-kr-Music-Player%2F</url>
+    <content type="text"><![CDATA[题目提示，要让播放器播放到一分钟之后 看图标就可以判断，这是一个VB程序.直接OD载入，先运行看看， 右键，中文搜索引擎，智能搜索,找到‘1’，它应该就是那串“1？？？？？”，点进去，在它下面发现弹窗代码再往上找，发现跳转“jl”，直接改一下，改成“jmp”，设一下断点，再运行，他会立即停在这个断点（谁知道为什么，。。。），所以先不设断点，让程序运行，到59秒时，让它暂停，设断点，让程序运行，单击play按钮，程序会停在断点。单步运行，找到下一个弹窗点，直接改一下，变成jmp，就此暴力破完了。当运行到一分钟之后，原本“MP3 Player”的地方就变成了，“Password is LIstenCare”]]></content>
       <categories>
-          
-          <category> write up </category>
-          
+        <category>write up</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 逆向 </tag>
-            
-            <tag> Reversing </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>EASY_UNPACK</title>
-      <link href="/2019/06/04/EASY-UNPACK/"/>
-      <url>/2019/06/04/EASY-UNPACK/</url>
-      
-        <content type="html"><![CDATA[<contents>无论是OD的提示，还是题目的提示，都表明这是个有壳的程序,同时可以知道，我们的任务就是找到OEP的地址。<p><img src="/.com//11.png" alt="一张图片"><br>放入工具试一下，</p><p><img src="/.com//22.png" alt="第二张"></p><p>确实有壳，但却不知道是什么壳。</p><p>下面，脱壳技巧上阵，单步调试法</p><p><img src="/.com//33.png" alt="嗲三张"><br>一步一步来，最终会看到熟悉的代码<img src="/.com//44.png" alt="33"><br>这个地址就是最终的flag了。</p><p>flag：00401150</p></contents>]]></content>
-      
-      
+      <tags>
+        <tag>逆向</tag>
+        <tag>Reversing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[EASY_UNPACK]]></title>
+    <url>%2F2019%2F06%2F04%2FEASY-UNPACK%2F</url>
+    <content type="text"><![CDATA[无论是OD的提示，还是题目的提示，都表明这是个有壳的程序,同时可以知道，我们的任务就是找到OEP的地址。 放入工具试一下， 确实有壳，但却不知道是什么壳。 下面，脱壳技巧上阵，单步调试法 一步一步来，最终会看到熟悉的代码这个地址就是最终的flag了。 flag：00401150]]></content>
       <categories>
-          
-          <category> write up </category>
-          
+        <category>write up</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 逆向 </tag>
-            
-            <tag> Reversing </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Easy keygen</title>
-      <link href="/2019/06/03/source-post/"/>
-      <url>/2019/06/03/source-post/</url>
-      
-        <content type="html"><![CDATA[<contents>[CSDN链接](https://blog.csdn.net/weixin_43360152/article/details/90758956 "CSDN链接")<p><img src="https://raw.githubusercontent.com/Morton66/tuchuang/master/pictures/%E9%A1%BE%E6%81%BA%E4%B9%8B-%E6%B4%9B%E7%A5%9E%E8%B5%8B%E5%9B%BE.jpg" alt="11111"></p></contents>]]></content>
-      
-      
+      <tags>
+        <tag>逆向</tag>
+        <tag>Reversing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Easy keygen]]></title>
+    <url>%2F2019%2F06%2F03%2Fsource-post%2F</url>
+    <content type="text"><![CDATA[[CSDN链接](https://blog.csdn.net/weixin_43360152/article/details/90758956 "CSDN链接")]]></content>
       <categories>
-          
-          <category> write up </category>
-          
+        <category>write up</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 逆向 </tag>
-            
-            <tag> Reversing </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>逆向</tag>
+        <tag>Reversing</tag>
+      </tags>
+  </entry>
 </search>

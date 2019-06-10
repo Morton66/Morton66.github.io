@@ -104,16 +104,17 @@
 <meta property="og:site_name" content="XM">
 <meta property="og:description" content="Reversing.kr 第三题">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610204827.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610173015.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610175212.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610175326.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610205327.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/QQ%E6%88%AA%E5%9B%BE20190610204458.png">
-<meta property="og:updated_time" content="2019-06-10T12:58:01.905Z">
+<meta property="og:updated_time" content="2019-06-10T12:59:37.049Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Reversing.kr-Music Player">
 <meta name="twitter:description" content="Reversing.kr 第三题">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610173015.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610204827.png">
 
 
 
@@ -419,7 +420,7 @@
                 
               
 
-              <time title="创建时间：2019-06-10 17:24:28 / 修改时间：20:58:01" itemprop="dateCreated datePublished" datetime="2019-06-10T17:24:28+08:00">2019-06-10</time>
+              <time title="创建时间：2019-06-10 17:24:28 / 修改时间：20:59:37" itemprop="dateCreated datePublished" datetime="2019-06-10T17:24:28+08:00">2019-06-10</time>
             
 
             
@@ -480,8 +481,8 @@
       
         <contents>
 题目提示，要让播放器播放到一分钟之后
-![](https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610204827.png)
 
+<p><img src="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610204827.png" alt></p>
 <p>看图标就可以判断，这是一个VB程序.<br>直接OD载入，先运行看看，</p>
 <p><img src="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610173015.png" alt><br>右键，中文搜索引擎，智能搜索,找到‘1’，它应该就是那串“1？？？？？”，点进去，<br><img src="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610175212.png" alt><br>在它下面发现弹窗代码<img src="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610175326.png" alt><br>再往上找，发现跳转“jl”，直接改一下，改成“jmp”，设一下断点，再运行，他会立即停在这个断点（谁知道为什么，。。。），所以先不设断点，让程序运行，到59秒时，让它暂停，设断点，让程序运行，单击play按钮，程序会停在断点。<br>单步运行，找到下一个弹窗点，直接改一下，变成jmp，就此暴力破完了。<br><img src="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610205327.png" alt><br>当运行到一分钟之后，原本“MP3 Player”的地方就变成了，“Password is LIstenCare”<br><img src="https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/QQ%E6%88%AA%E5%9B%BE20190610204458.png" alt></p>
 </contents>
