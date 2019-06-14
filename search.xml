@@ -6,9 +6,9 @@
     <content type="text"><![CDATA[HELLO WORD!!!]]></content>
   </entry>
   <entry>
-    <title><![CDATA[crack1]]></title>
+    <title><![CDATA[160个crack 001]]></title>
     <url>%2F2019%2F06%2F10%2Fcrack1%2F</url>
-    <content type="text"><![CDATA[## 暴力破解 ![](https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610210501.png) 这种软件，暴力破解最好破，直接改跳转就行了。 OD载入，先运行一下，查看一下错误会报什么信息， ![](https://raw.githubusercontent.com/morton66/tuchuang/master/pictures/20190610211025.png) 右键中文搜索引擎，智能搜索，直接查找刚才找出来的错误信息，一般正确的提示也在附近错误信息在这里，向上找到跳转点这是一个关键跳转，我们直接把jnz改为jz，实现跳转，可以得到正确弹窗。 算法破解key:通过搜索字符串，定位到关键代码。 网上找到大佬的write up，说这种key一般是硬编码在程序里的。果不其然，找到key：Hello Dude! name/seial:再往下找到第二部分，他要求输入name和serial来判断是否通过。 先输入“12345”测试一下，可以看出，中间的数是变化的，两边不变。 中间那个计算的函数有点麻烦（汇编没学好..），看看大佬解析]]></content>
+    <content type="text"><![CDATA[暴力破解这种软件，暴力破解最好破，直接改跳转就行了。OD载入，先运行一下，查看一下错误会报什么信息， 右键中文搜索引擎，智能搜索，直接查找刚才找出来的错误信息，一般正确的提示也在附近错误信息在这里，向上找到跳转点这是一个关键跳转，我们直接把jnz改为jz，实现跳转，可以得到正确弹窗。 算法破解key:通过搜索字符串，定位到关键代码。 网上找到大佬的write up，说这种key一般是硬编码在程序里的。果不其然，找到key：Hello Dude! name/seial:再往下找到第二部分，他要求输入name和serial来判断是否通过。 先输入“12345”测试一下，可以看出，中间的数是变化的，两边不变。 中间那个计算的函数有点麻烦（汇编没学好..），看看大佬解析]]></content>
       <categories>
         <category>write up</category>
       </categories>
