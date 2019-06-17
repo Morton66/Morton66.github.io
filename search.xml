@@ -6,7 +6,7 @@
     <content type="text"><![CDATA[HELLO WORD!!!]]></content>
   </entry>
   <entry>
-    <title><![CDATA[160个crack 001]]></title>
+    <title><![CDATA[160个crack 002]]></title>
     <url>%2F2019%2F06%2F17%2Fcrack002%2F</url>
     <content type="text"><![CDATA[## 暴力破解 OD载入后，先运行一下， 可以看到，在错误的弹窗里，有”You Get Wrong”,”Try Again”字样，依此来进行字符串的查找。 找到”You Get Wrong”,双击进入,可以明显的看见一个跳转。 找到上面的跳转语句，可以看到，跳转语句下方即正确输出，所以，将je改为jnz，阻止跳转即可。 暴力破解成功！！！ 算法破解加断点找到程序有效区域，然后F8单步跟随，第一步再继续向下看， 至此，完整的serial被算出了。算法破解结束。等有空再写注册机吧。]]></content>
       <categories>
